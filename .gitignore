@@ -102,3 +102,9 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# macOS related
+.DS_Store
+
+# errbot data
+data/
