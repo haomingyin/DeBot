@@ -5,6 +5,7 @@ setup:
 	pip install virtualenv
 	virtualenv --python $(python3_path) ./.venv
 	./.venv/bin/pip install errbot
+	mkdir ./data
 
 text:
 	./.venv/bin/errbot -T
