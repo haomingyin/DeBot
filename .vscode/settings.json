@@ -1,0 +1,9 @@
+{
+    "python.pythonPath": "./.venv/bin/python3",
+    "python.venvFolders": [
+        "envs",
+        ".pyenv",
+        ".direnv",
+        ".venv"
+    ]
+}
