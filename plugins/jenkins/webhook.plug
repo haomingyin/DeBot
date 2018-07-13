@@ -1,0 +1,9 @@
+[Core]
+Name = Webhook
+Module = webhook
+
+[Documentation]
+Description = Webhook for jenkins
+
+[Python]
+Version = 2+
