@@ -108,3 +108,4 @@ venv.bak/
 
 # errbot data
 data/
+credentials/

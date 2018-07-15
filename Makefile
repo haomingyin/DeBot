@@ -10,3 +10,6 @@ setup:
 
 text:
 	./.venv/bin/errbot -T
+
+start:
+	./.venv/bin/errbot

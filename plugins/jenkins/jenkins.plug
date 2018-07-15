@@ -1,0 +1,9 @@
+[Core]
+Name = Jenkins
+Module = jenkins
+
+[Documentation]
+Description = Jenkins related commands and web hooks
+
+[Python]
+Version = 2+

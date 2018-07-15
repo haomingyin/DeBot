@@ -5,5 +5,16 @@
         ".pyenv",
         ".direnv",
         ".venv"
+    ],
+    "cSpell.words": [
+        "botcmd",
+        "cmdfilter",
+        "debot",
+        "dffilter",
+        "dialogflow",
+        "emptycmd",
+        "errbot",
+        "itertools",
+        "prefliter"
     ]
 }

@@ -44,7 +44,7 @@ from pathlib import Path
 # 'XMPP'     - the Extensible Messaging and Presence Protocol (https://xmpp.org/)
 # 'Telegram' - cloud-based mobile and desktop messaging app with a focus
 #              on security and speed. (https://telegram.org/)
-BACKEND = 'Text'  # defaults to XMPP
+BACKEND = 'Slack'  # defaults to XMPP
 
 # STORAGE selection.
 # This configures the type of persistence you wish to use Errbot with.
@@ -120,7 +120,7 @@ BOT_LOG_FILE = Path().joinpath(Path().absolute(), 'errbot.log')
 # If you encounter any issues with Err, please set your log level to
 # logging.DEBUG and attach a log with your bug report to aid the developers
 # in debugging the issue.
-BOT_LOG_LEVEL = logging.DEBUG
+BOT_LOG_LEVEL = logging.INFO
 
 # Enable logging to sentry (find out more about sentry at www.getsentry.com).
 # This is optional and disabled by default.
@@ -141,7 +141,7 @@ BOT_LOG_LEVEL = logging.DEBUG
 ##########################################################################
 
 # The identity, or credentials, used to connect to a server
-# BOT_IDENTITY = {
+BOT_IDENTITY = {
     # XMPP (Jabber) mode
     # 'username': 'err@localhost',  # The JID of the user you have created for the bot
     # 'password': 'changeme',       # The corresponding password for this user
@@ -178,14 +178,14 @@ BOT_LOG_LEVEL = logging.DEBUG
     ## if you have no source port preference.
     ##    example: 'bind_address': ('my-errbot.io', 0)
     # 'bind_address': ('localhost', 0),
-# }
+}
 
 # Set the admins of your bot. Only these users will have access
 # to the admin-only commands.
 #
 # Unix-style glob patterns are supported, so 'gbin@localhost'
 # would be considered an admin if setting '*@localhost'.
-BOT_ADMINS = ('@localhost',)
+BOT_ADMINS = ('@haomingyin')
 
 # Set of admins that wish to receive administrative bot notifications.
 #BOT_ADMINS_NOTIFICATIONS = ()
@@ -225,7 +225,7 @@ BOT_ADMINS = ('@localhost',)
 # names, rather than the BOT_PREFIX above. This option allows you to
 # specify alternative prefixes the bot will respond to in addition to
 # the prefix above.
-#BOT_ALT_PREFIXES = ('Err',)
+BOT_ALT_PREFIXES = ('@debot',)
 
 # If you use alternative prefixes, you might want to allow users to insert
 # separators like , and ; between the prefix and the command itself. This
@@ -235,12 +235,12 @@ BOT_ADMINS = ('@localhost',)
 #
 # Note: There's no need to add spaces to the separators here
 #
-#BOT_ALT_PREFIX_SEPARATORS = (':', ',', ';')
+BOT_ALT_PREFIX_SEPARATORS = (':', ',', ';')
 
 # Continuing on this theme, you might want to permit your users to be
 # lazy and not require correct capitalization, so they can do 'Err',
 # 'err' or even 'ERR'.
-#BOT_ALT_PREFIX_CASEINSENSITIVE = True
+BOT_ALT_PREFIX_CASEINSENSITIVE = True
 
 ##########################################################################
 # Access controls and message diversion                                  #
