@@ -1,0 +1,9 @@
+[Core]
+Name = DFFilter
+Module = dffilter
+
+[Python]
+Version = 2+
+
+[Documentation]
+Description = Plugin for pre filtering all commands via Dialogflow
